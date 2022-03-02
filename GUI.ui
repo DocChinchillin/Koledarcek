@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>KoledarWindow</class>
+ <widget class="QMainWindow" name="KoledarWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>300</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>300</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Koledar Rok Švikart</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QComboBox" name="meseci">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <item>
+           <property name="text">
+            <string>Januar</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Februar</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Marec</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>April</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Maj</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Junij</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Julij</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Avgust</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>September</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Oktober</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>November</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>December</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSpinBox" name="leto">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximum">
+           <number>3000</number>
+          </property>
+          <property name="value">
+           <number>2022</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLineEdit" name="datumLine">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="placeholderText">
+           <string>DD.MM.LLLL</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <layout class="QGridLayout" name="koledarLayout"/>
+    </item>
+   </layout>
+  </widget>
+  <action name="actionOdpri">
+   <property name="text">
+    <string>Odpri</string>
+   </property>
+  </action>
+  <action name="actionIzhod">
+   <property name="text">
+    <string>Izhod</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
